@@ -1,0 +1,28 @@
+From: Sudheesh Shetty <sudheeshshetty@gmail.com>
+Date: Tue, 19 Jan 2021 22:44:56 +0100
+Subject: Remove git from gemspec
+
+Last-Update: 2016-03-08
+
+Last-Update: 2016-03-08
+---
+ domain_name.gemspec | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/domain_name.gemspec b/domain_name.gemspec
+index 7ac4c82..7479d88 100644
+--- a/domain_name.gemspec
++++ b/domain_name.gemspec
+@@ -18,9 +18,9 @@ Suffix List.
+   gem.homepage      = "https://github.com/knu/ruby-domain_name"
+   gem.licenses      = ["BSD-2-Clause", "BSD-3-Clause", "MPL-2.0"]
+ 
+-  gem.files         = `git ls-files`.split($/)
+-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
++  gem.files         = ''
++  gem.executables   = ''
++  gem.test_files    = ''
+   gem.require_paths = ["lib"]
+ 
+   gem.extra_rdoc_files = [

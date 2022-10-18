@@ -1,0 +1,4 @@
+We could use the script in tool/ to generate the content of this package
+from the data in the publicsuffix package, with a dpkg hook on this package.
+
+  -- Cédric Boutillier <boutil@debian.org>  2016-03-05

@@ -1,0 +1,32 @@
+Source: ruby-domain-name
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Gunnar Wolf <gwolf@debian.org>,
+           Lucas Nussbaum <lucas@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1),
+               rake,
+               ruby-shoulda,
+               ruby-test-unit,
+               ruby-unf
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-domain-name.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-domain-name
+Homepage: https://github.com/knu/ruby-domain_name
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-domain-name
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends},
+         ruby-unf
+Description: Domain Name manipulation library for Ruby
+ This is a Domain Name manipulation library for Ruby.
+ .
+ It can also be used for cookie domain validation based on the Public
+ Suffix List.

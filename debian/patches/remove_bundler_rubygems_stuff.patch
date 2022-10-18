@@ -1,0 +1,31 @@
+From: =?utf-8?q?C=C3=A9dric_Boutillier?= <cedric.boutillier@gmail.com>
+Date: Tue, 19 Jan 2021 22:44:56 +0100
+Subject: disable the use of rubygems/bundler in tests
+
+Last-Update: 2016-03-05
+
+not needed since all dependencies are provided as Debian packages
+require also minitest for shoulda
+---
+ test/helper.rb | 10 +---------
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+
+diff --git a/test/helper.rb b/test/helper.rb
+index beb8025..84e2ef4 100644
+--- a/test/helper.rb
++++ b/test/helper.rb
+@@ -1,13 +1,5 @@
+-require 'rubygems'
+-require 'bundler'
+-begin
+-  Bundler.setup(:default, :development)
+-rescue Bundler::BundlerError => e
+-  $stderr.puts e.message
+-  $stderr.puts "Run `bundle install` to install missing gems"
+-  exit e.status_code
+-end
+ require 'test/unit'
++require 'minitest'
+ 
+ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+ $LOAD_PATH.unshift(File.dirname(__FILE__))

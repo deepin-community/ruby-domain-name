@@ -1,0 +1,94 @@
+ruby-domain-name (0.5.20190701-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Use secure URI in debian/watch.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Cédric Boutillier ]
+  * [ci skip] Update team name
+  * [ci skip] Add .gitattributes to keep unwanted files out of the source
+    package
+
+  [ Lucas Nussbaum ]
+  * New upstream version 0.5.20190701
+  * Refresh packaging
+  * Refresh patches
+  * debian/copyright: remove tab
+
+ -- Lucas Nussbaum <lucas@debian.org>  Tue, 19 Jan 2021 22:57:05 +0100
+
+ruby-domain-name (0.5.20160216-2) unstable; urgency=medium
+
+  * Team upload
+  * Remove git usage (Closes: #817011)
+
+ -- Sudheesh Shetty <sudheeshshetty@gmail.com>  Tue, 08 Mar 2016 02:19:59 +0530
+
+ruby-domain-name (0.5.20160216-1) unstable; urgency=medium
+
+  * Team upload
+  * Imported Upstream version 0.5.20160216
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+  * Do not install files from data, not used anyway (Closes: #805808)
+    If needed, the file is provided by the publicsuffix package
+  * Add as a TODO item the idea of generating data from publicsuffix with a
+    dpkg hook
+  * Build-depend on ruby-test-unit, suggest publicsuffix
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 05 Mar 2016 22:46:41 +0100
+
+ruby-domain-name (0.5.21-1) unstable; urgency=low
+
+  * Team upload.
+  * Imported Upstream version 0.5.21
+  * d/control:
+    - changed homepage to https
+    - bumped up standards version to 3.9.6 (no changes needed)
+    - added testsuite header
+
+ -- Jonas Genannt <jonas.genannt@capi2name.de>  Fri, 10 Oct 2014 15:09:19 +0200
+
+ruby-domain-name (0.5.12-1) unstable; urgency=low
+
+  * New upstream release
+  * Standards-version 3.9.3 → 3.9.4 (no changes needed)
+
+ -- Gunnar Wolf <gwolf@debian.org>  Wed, 26 Jun 2013 09:30:28 -0500
+
+ruby-domain-name (0.5.3-1) unstable; urgency=low
+
+  * Team upload
+  * New upstream version
+  * Build against gem2deb >=0.3.0~
+  * Bump Standards-Version: to 3.9.3 (no changes needed)
+  * Add debian/patches/remove_bundler_rubygems_stuff.patch
+  * Add 'unapply-patches' to debian/source/local-options
+  * Enable test suite; build-depend on ruby-shoulda
+  * Update debian/copyright Format; to copyright-format/1.0
+
+ -- Cédric Boutillier <cedric.boutillier@gmail.com>  Thu, 28 Jun 2012 15:30:29 +0200
+
+ruby-domain-name (0.5.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Gunnar Wolf <gwolf@debian.org>  Fri, 09 Mar 2012 09:41:08 -0600
+
+ruby-domain-name (0.5.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #656282)
+
+ -- Gunnar Wolf <gwolf@debian.org>  Tue, 17 Jan 2012 18:13:09 -0600
